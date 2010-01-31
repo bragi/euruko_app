@@ -1,5 +1,5 @@
 bundle_path "vendor/bundler_gems"
-gem "rails", "2.2.2"
+gem "rails", "2.3.5"
 gem "haml"
 gem 'mislav-will_paginate', '2.2.3'
 gem "pdf-writer", "1.1.2"
