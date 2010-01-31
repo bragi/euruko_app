@@ -1,13 +1,5 @@
 class SystemMailer < ActionMailer::Base
   
-  def exception( exception )
-    setup
-    @recipients  = APP_CONFIG[:email_notification_recipients]
-    @subject    += "Exception: #{exception.exception_class}: #{exception.message}"
-    @body[:url]  = "http://#{APP_CONFIG[:site_domain]}/"
-    @body[:exception] = exception
-  end
-
   def paper( paper )
     setup
     @recipients    = APP_CONFIG[:email_notification_recipients]
