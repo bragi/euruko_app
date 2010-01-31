@@ -1,11 +1,11 @@
-The EuRuKo Conf 2009 Application
-===
+# The EuRuKo Conf 2010 Application
 
-Intenciones
----
+Handles Euruko 2010 site and allows to register to both attendees and speakers and pay registration fee.
 
-Crear una aplicación de registro para la conferencia **EuRuKo2009**.
+## Setup
 
-Debe ser **sencilla** tanto de manejo como de funcionalidades, sin grandes pretensiones.
+Make sure you have bundler gem installed:
 
-Aprendiendo de las carencias de la aplicación de registro de otros eventos en los que hemos participado vamos a intentar poner atención en ayudar en la **configuración de calendario** y en la **gestión de pagos**.
+    gem install bundler
+
+  
