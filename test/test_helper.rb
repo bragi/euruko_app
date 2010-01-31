@@ -1,16 +1,8 @@
-require 'rubygems'
-require 'faker'
-
-# # test server from http://github.com/Roman2K/rails-test-serving
-# require 'rails_test_serving'
-# RailsTestServing.boot
-
-
 ENV["RAILS_ENV"] = "test"
 require File.expand_path(File.dirname(__FILE__) + "/../config/environment")
 require 'test_help'
 
-class Test::Unit::TestCase
+class ActiveSupport::TestCase
   # Transactional fixtures accelerate your tests by wrapping each test method
   # in a transaction that's rolled back on completion.  This ensures that the
   # test database remains unchanged so your fixtures don't have to be reloaded
@@ -43,8 +35,6 @@ class Test::Unit::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
-  
-  # Activate the current_user
   def login_as(user)
     @request.session[:user_id] = user.id
   end
